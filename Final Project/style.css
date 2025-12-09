@@ -14,15 +14,17 @@ body.home {
   height: fit-content;
 }
 body {
+  min-height: 100vh; /* Or 100dvh for dynamic viewport height */
+  grid-template-rows: auto 1fr auto; /* Header, Main (fills space), Footer */
   background-image: linear-gradient(
-    to bottom,
+    to top,
     rgba(30, 217, 254, 0.3),
     rgb(255, 255, 255)
   );
 
   height: fit-content;
   font-family: "Montserrat";
-  display: flex;
+  display: grid;
   flex-direction: column;
 }
 
@@ -249,7 +251,7 @@ p.align-left {
   text-align: left;
   overflow: auto;
   display: table-cell;
-  min-width: 37em;
+  min-width: 50%;
   color: rgb(1, 47, 133);
   font-size: 2vh;
   vertical-align: middle;
@@ -374,6 +376,7 @@ h4 {
   padding-left: 1em;
 }
 #services-pic {
+  min-width: 50%;
   content: cover;
   max-width: 100%;
   height: auto;
@@ -519,8 +522,8 @@ footer {
     max-width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
-    margin-top: 8%;
+    margin-bottom: 4%;
+    margin-top: 4%;
   }
   div.cnt-right {
     padding-right: 0;
@@ -653,10 +656,10 @@ footer {
     justify-content: center;
   }
   #img-1 {
-    width: 90%;
+    width: 100%;
   }
   #logo {
-    width: 90%;
+    width: 100%;
   }
   .column-cnt {
     padding: 0;
@@ -674,7 +677,7 @@ footer {
   }
 
   div.column2-content {
-    margin-bottom: 10%;
+    margin-bottom: 0%;
   }
   div.logo_cnt-c {
     margin-top: 0;
