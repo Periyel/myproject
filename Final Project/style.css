@@ -176,9 +176,9 @@ div.cnt-right {
   height: fit-content;
   max-width: 100%;
   height: auto;
-  margin-top: 1em;
-  box-shadow: 0 4px 8px 0 rgba(30, 217, 254, 0.12),
-    0 6px 20px 0 rgba(30, 217, 254, 0.12);
+  margin-top: 0%;
+  box-shadow: 0 4px 8px 0 rgba(30, 217, 254, 0.05),
+    0 6px 20px 0 rgba(30, 217, 254, 0.09);
 }
 
 h2 {
@@ -205,7 +205,7 @@ h2 span {
   justify-content: center;
   display: flex;
   text-decoration: underline;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.3em;
   font-weight: 500;
 
   /*
@@ -305,7 +305,9 @@ h3.paragraph-2 {
   margin-right: 1em;
   height: auto;
   flex-grow: 1;
-  width: 20em;
+  width: 90%;
+  /* height: auto; */
+  overflow: hidden;
 }
 
 a {
@@ -491,7 +493,8 @@ footer {
     padding: 0;
   }
   #img-1 {
-    width: 100%;
+    width: 90%;
+    overflow: hidden;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -548,8 +551,8 @@ footer {
   #logo {
     margin-right: 0;
     object-fit: cover;
-    max-height: 30em;
-    width: 80%;
+    max-height: 60%;
+    width: 90%;
     border-radius: 0px;
   }
   .horizontal-cnt {
@@ -646,7 +649,7 @@ footer {
   }
 
   h2 {
-    font-size: 160%;
+    font-size: 100%;
     padding: 0;
   }
 
@@ -659,14 +662,16 @@ footer {
     width: 100%;
   }
   #logo {
-    width: 100%;
+    width: 80%;
+    max-height: 80%;
+    padding-top: 20%;
   }
   .column-cnt {
     padding: 0;
   }
 
   div.logo_cnt-p {
-    gap: 2em;
+    gap: 0em;
   }
 
   p.align-1,
@@ -684,7 +689,7 @@ footer {
   }
   h3 {
     font-size: 130%;
-    margin-top: 15%;
+    margin-top: 10%;
   }
 
   h3.paragraph-2 {
