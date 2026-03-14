@@ -27,7 +27,14 @@ body {
   display: grid;
   flex-direction: column;
 }
-
+.map {
+  width: 60%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  height: 60%;
+}
 .header {
   background-image: linear-gradient(
     to left,
@@ -43,7 +50,8 @@ body {
   margin-right: auto;
   margin-bottom: 0px;
   /*margin-top: 80px; */
-  box-shadow: 0 4px 8px 0 rgba(30, 217, 254, 0.12),
+  box-shadow:
+    0 4px 8px 0 rgba(30, 217, 254, 0.12),
     0 6px 20px 0 rgba(30, 217, 254, 0.12);
 }
 
@@ -59,7 +67,7 @@ body {
 }
 
 .official-logo {
-  margin-right: ;
+  margin-right:;
   top: 0;
   right: 0;
   position: absolute;
@@ -74,7 +82,7 @@ body {
   letter-spacing: 1px;
   display: flex;
   padding: 2px 20px;
-  border-radius: ;
+  border-radius:;
   align-items: center;
 }
 .logo_container:hover {
@@ -128,7 +136,9 @@ li a {
 li a:hover {
   text-decoration: underline 0.15em white;
   text-underline-offset: 0.4em;
-  transition: text-decoration-color 150ms, text-underline-offset 150ms;
+  transition:
+    text-decoration-color 150ms,
+    text-underline-offset 150ms;
   padding-top: 0;
   color: white;
   opacity: 1;
@@ -177,7 +187,8 @@ div.cnt-right {
   max-width: 100%;
   height: auto;
   margin-top: 0%;
-  box-shadow: 0 4px 8px 0 rgba(30, 217, 254, 0.05),
+  box-shadow:
+    0 4px 8px 0 rgba(30, 217, 254, 0.05),
     0 6px 20px 0 rgba(30, 217, 254, 0.09);
 }
 
@@ -186,12 +197,12 @@ h2 {
   margin-bottom: 1em;
   min-width: 50%;
   text-align: center;
-  margin-top: ;
+  margin-top:;
   padding: 0px 70px 0px 30px;
   color: rgba(1, 47, 133, 1);
   display: flex;
   flex-wrap: wrap;
-  text-wrap: ;
+  text-wrap:;
   flex-direction: column;
   align-content: center;
   line-height: 1.3em;
@@ -241,7 +252,7 @@ p.align-1 {
   height: 14em;
   font-weight: 400;
   line-height: 2em;
-  padding-right: ;
+  padding-right:;
   font-weight: 600;
   border-radius: 0.1em;
   padding-left: 2%;
@@ -258,7 +269,7 @@ p.align-left {
   max-height: 15em;
   font-weight: 450;
   line-height: 1.5em;
-  padding-left: ;
+  padding-left:;
 }
 p.align-right {
   text-align: right;
@@ -271,7 +282,7 @@ p.align-right {
   max-height: 15em;
   font-weight: 450;
   line-height: 1.5em;
-  padding-left: ;
+  padding-left:;
 }
 p.align-center {
   text-align: center;
@@ -284,7 +295,7 @@ p.align-center {
   max-height: 15em;
   font-weight: 450;
   line-height: 1.5em;
-  padding-left: ;
+  padding-left:;
 }
 
 h3 {
@@ -334,7 +345,7 @@ a:active {
   min-width: 40em;
   display: table;
   width: 100%;
-  flex-wrap: ;
+  flex-wrap:;
   justify-content: center;
 }
 .child-text {
@@ -350,7 +361,7 @@ a:active {
   height: 14em;
   font-weight: 400;
   line-height: 2em;
-  padding-right: ;
+  padding-right:;
   font-weight: 600;
   border-radius: 0.1em;
   padding-left: 2%;
@@ -457,7 +468,9 @@ footer {
   opacity: 1;
   text-decoration: underline 0.15em white;
   text-underline-offset: 0.4em;
-  transition: text-decoration-color 150ms, text-underline-offset 150ms;
+  transition:
+    text-decoration-color 150ms,
+    text-underline-offset 150ms;
   transition: all 0.35s ease-in-out;
 }
 .footerBottom {
@@ -500,7 +513,8 @@ footer {
     justify-content: center;
     object-fit: cover;
     border-radius: 0em;
-    box-shadow: 0 4px 8px 0 rgba(30, 217, 254, 0.12),
+    box-shadow:
+      0 4px 8px 0 rgba(30, 217, 254, 0.12),
       0 6px 20px 0 rgba(30, 217, 254, 0.12);
   }
   div.column2-content {
@@ -571,13 +585,13 @@ footer {
     max-width: 100%;
   }
   .logo_container {
-    animation-name: ;
+    animation-name:;
     animation-duration: 1s;
     animation-timing-function: ease-in;
-    animation-delay: ;
-    animation-iteration-count: ;
-    animation-direction: ;
-    animation-fill-mode: ;
+    animation-delay:;
+    animation-iteration-count:;
+    animation-direction:;
+    animation-fill-mode:;
 
     transform: translateX();
   }
@@ -604,7 +618,7 @@ footer {
     vertical-align: middle;
     font-weight: 450;
     line-height: 1.5em;
-    padding-left: ;
+    padding-left:;
   }
   .paragraph-2 {
     display: flex;
@@ -617,7 +631,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .header {
-    height: ;
+    height:;
   }
   div.logo_container {
     display: none;

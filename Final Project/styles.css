@@ -1,0 +1,176 @@
+/* 1. Global Reset & Base */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-width: 374px;
+}
+
+/* Set font once at the top so you don't have to repeat it */
+body {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-image: linear-gradient(
+    to top,
+    rgba(30, 217, 254, 0.3),
+    rgb(255, 255, 255)
+  );
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+/* 2. Header & Navigation */
+.header {
+  background-image: linear-gradient(to left, #012f85, #1ed9fe);
+  width: 100%;
+  height: 6em;
+  display: flex;
+  transition: 0.3s;
+  box-shadow: 0 4px 20px rgba(30, 217, 254, 0.24);
+  z-index: 100;
+}
+
+.inner_header {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo_container h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.logo_container h1 span {
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #012f85;
+}
+
+.navigation {
+  display: flex;
+  height: 100%;
+}
+
+.navigation li {
+  display: table;
+  height: 100%;
+}
+
+.navigation li a {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px 15px; /* Fixed '15x' typo */
+  min-width: 95px;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 600;
+  opacity: 0.75;
+  transition: all 0.5s ease-in-out;
+  text-underline-offset: 0.4em;
+}
+
+.navigation li a:hover {
+  opacity: 1;
+  text-decoration: underline 0.15em white;
+}
+
+/* 3. Main Content Structure */
+.column-cnt {
+  border-top: 1px rgba(1, 47, 133, 0.6) solid;
+  padding: 3.11em 0;
+}
+
+.horizontal-cnt {
+  width: 100%;
+  padding: 0 15%;
+}
+
+/* The Table-Cell vertical centering logic you built */
+.logo_cnt-p {
+  display: table;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 2em;
+}
+
+.logo_cnt-c {
+  display: table-cell;
+  vertical-align: middle;
+  max-width: 50em;
+}
+
+/* Paragraphs */
+p.align-1,
+p.align-left {
+  font-size: 2vh;
+  line-height: 1.5em;
+  color: #012f85;
+}
+
+p.align-1 {
+  background-color: rgba(0, 0, 0, 0.03);
+  text-align: center;
+  padding: 0 2%;
+  font-weight: 600;
+  line-height: 2em;
+  height: 14em;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 0.1em;
+}
+
+/* 4. Footer Design */
+footer {
+  background-image: linear-gradient(to left, #012f85, #1ed9fe);
+  margin-top: 3.5em;
+}
+
+.socialIcons {
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.socialIcons a {
+  display: flex; /* Flex is safer for centering icons */
+  justify-content: center;
+  align-items: center;
+  width: 4em;
+  height: 4em;
+  border-radius: 45%;
+  transition: 0.35s;
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  color: white;
+  opacity: 0.8;
+}
+
+.socialIcons a:hover {
+  background-color: rgba(1, 47, 133, 0.6);
+}
+.socialIcons a:hover i {
+  opacity: 1;
+}
+
+.footerBottom {
+  background-color: rgba(30, 217, 254, 0.1);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
